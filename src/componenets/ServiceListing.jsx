@@ -48,7 +48,7 @@ export default function ServiceListing() {
         <input
           type="text"
           className="search-input"
-          placeholder="Search by name, area, or service (e.g. 'deep cleaning', 'Margao')"
+          placeholder="Search by name, area, or service (e.g. 'deep cleaning', 'Panaji')"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
