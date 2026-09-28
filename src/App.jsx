@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './componenets/Navbar.jsx'
+import ServiceListing from './componenets/ServiceListing.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
   return (
-    <>
-      
-    </>
+    <div className="app-shell">
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<ServiceListing />} />
+         
+          <Route path="*" element={<ServiceListing />} />
+        </Routes>
+      </main>
+    </div>
   )
 }
-
-export default App
