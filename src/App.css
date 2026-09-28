@@ -251,5 +251,75 @@ body {
   width: 100%;
 }
 
+/* Detail */
+
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.detail-header h1 {
+  margin: 0 0 4px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 16px;
+  color: var(--text-light);
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.description {
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.pricing-box,
+.availability-box {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.price-large {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 4px 0;
+}
+
+.price-note {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.chip {
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.chip-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
 
 
