@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { BookingProvider } from './context/BookingContext.jsx'
 import { createRoot } from 'react-dom/client'
 import './App.css'
 import App from './App.jsx'
@@ -7,7 +8,9 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+    <BookingProvider>
     <App />
+    </BookingProvider>
     </BrowserRouter>
   </StrictMode>,
 )
